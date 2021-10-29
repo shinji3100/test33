@@ -1,0 +1,276 @@
+/* body{
+    background-color: rgb(100, 255, 208);
+    background-size: cover;
+} */
+
+body {
+    background-color: #e74c3c;
+    background-size: center;
+    -webkit-animation: color 10s infinite;
+  }
+  @-webkit-keyframes color {
+    0% { background-color: #e74c3c; }
+    20% { background-color: #f1c40f; }
+    40% { background-color: #1abc9c; }
+    60% { background-color: #3498db; }
+    80% { background-color: #9b59b6; }
+    100% { background-color: #e74c3c; }
+  }
+
+
+
+
+
+  /* .Btn{
+    position: relative;
+    border: 1px solid #5bc8ac;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    height: 48px;
+    line-height: 48px;
+    display: flex;
+    text-align: center;
+    background: #fff;
+    font-size: 20px;
+  }
+  
+  .Btn-Text{
+    width: 100%;
+    height: 100%;
+    color: #5bc8ac;
+    z-index: 10;
+  }
+  
+  .Btn-Text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: #5bc8ac;
+    z-index: -1;
+    transition: .2s;
+  }
+  
+  .Btn-Text:hover{
+    color: #fff;
+  }
+  
+  .Btn-Text:hover:before{
+    width: 100%;
+  } */
+
+  /* main {
+    background: rgb(0, 0, 0);
+  } */
+ 
+  main {
+    background: #eee;
+  }
+   
+  .mask-landscape {
+    background: url("../img/g.jpg") center;
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: table;
+    width: 100vw;
+    height: 100vh;
+  }
+   
+  h1 {
+    font-size: 20vw;
+    font-weight: bold;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+ 
+ 
+  /* main {
+    background: #eee;
+  }
+  .grade {
+    width: 100%; 
+    height: 300px; 
+    font-size: 80px; 
+    font-weight: bold; 
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(../img/g.jpg);
+    animation: spin 5s linear infinite; */
+
+    /* animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.5, 0.51, 0.51, 0.52);
+    animation-iteration-count: infinite; */
+  }
+  
+  @keyframes spin{
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  h1{
+      animation: stop 5s linear infinite;
+  }
+  @keyframes stop{
+    0% {
+      transform: rotateZ(-0);
+    }
+    100% {
+      transform: rotateZ(-360deg);
+    }
+  }
+  /* h1{
+    background: black;
+    animation-name: stop;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.5, 0.51, 0.51, 0.52);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes stop {
+    0% {
+        transform: rotateZ(0);
+      }
+    100% {
+        transform: rotateZ(-360deg);
+      }
+  } */
+
+    
+    /* display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+    */
+  /* h1 {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    
+  } */
+  
+  a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: translate(-100%, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+    content: "";
+  }
+  
+  a:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  /****** Base style. ******/
+  /* body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "Yu Gothic", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
+    line-height: 1.4;
+    font-size: 20px;
+    background-color: #333;
+  } */
+  
+  li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .name{
+    background: url(../img/g.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: 900%;
+    padding-top: 30px ;
+    padding-bottom: 30px ;
+
+    }
+
+  
+  .name {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    /* background-color: #ccc; */
+    
+  }
+  .a{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .name {
+    content: "";
+    display: block;
+    position: absolute　;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* background-repeat: no-repeat; */
+    /* background-image: url(../img/g.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.5, 0.51, 0.51, 0.52);
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes spin{
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  } */
+  
+  /* @keyframes spin {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  } */
+  
+  /****** Base style. ******/
+  /* body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  } */

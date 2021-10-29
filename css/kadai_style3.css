@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* はじ余白 */
+
+body {
+  background-color: #e74c3c;
+  background-size: center;
+  -webkit-animation: color 10s infinite;
+  text-align: center;
+}
+.all{
+  border: 20px;
+  background: rgb(243, 243, 243);
+}
+
+@-webkit-keyframes color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+
+
+main {
+  background:transparent;
+}
+ 
+.name {
+  /* margin-top: 50px; */
+  background: url(../img/g.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: table;
+  width: max-content;
+  height: 100px;
+  animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.5, 0.51, 0.51, 0.52);
+    animation-iteration-count: infinite;
+}
+@keyframes spin{
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  display: table;
+  vertical-align: middle;
+}
+
+.yohaku{
+  height: 200px;
+}
+
+.kage{
+  font-size: 80px;
+  color:rgb(243, 243, 243);
+  font-weight: bold;
+  text-align: center;
+  display: table;
+  vertical-align: middle;
+  /* text-shadow: 10px 10px 16px #616161; */
+  text-shadow: -10px -10px 20px #ffffff 
+  /* inset 10px 10px 20px #bebebe */;
+}
+
+
+ul{
+  list-style: none;
+  /* display: flexbox; */
+  text-align: center;
+}
+
+ul li{
+  display: inline-block;
+  width: 33%;
+  
+}
+a {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: #e74c3c;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+  
+  -webkit-animation: color 10s infinite;
+  }
+  
+
+a:hover:after {
+  transform: translate(0, 0);
+}
+
+
+.zayu{
+  
+    width: 100%;
+    height:800px;
+    background: #000;
+    text-align: center;
+}
+
+.inline{
+  display: inline-block;
+  /* position: relative; */
+  width: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+
+
+
+
+.midasi {
+  /* background: url(../img/g.jpg) center; */
+  text-align: left;
+  margin-left: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+  width: max-content;
+  height: 100px;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  display: table;
+  vertical-align: middle;
+  background-color: #e74c3c;
+  background-size: center;
+  -webkit-animation: color 10s infinite;
+  
+}
+
+.f{
+    
+}
+.migi{
+  margin-left: 40px;
+}
+
+.komuro{
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background:url(../img/komuro.jpg) ;
+  background-size: cover center;
+}
+
+.eren{
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background:url(../img/eren.jpg) ;
+  background-size: cover;
+}
+
+.hidari{
+  margin-right: 40px;
+}
+
+.komuro2{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background:url(../img/komuro2.jpg) ;
+  background-size: cover;
+}
+
+.eren2{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background:url(../img/eren2.jpg) ;
+  background-size: cover;
+}
+
+
+
+.rappu{
+  width: 100%;
+  height:800px;
+  background: #000;
+  /* display: flex; */
+}
+.douga{
+  /* display: flex; */
+  position: relative;
+  
+}
+
+.zimaku{
+  position: relative;
+}
+.mozikan{
+  letter-spacing: 3em;
+}
+
+ 
+/* .css-fukidashi {
+  padding: 0;
+  margin: 0;
+} */
+.zimaku {
+  width: 100%;
+  position: relative;
+  margin:80px 50px 50px;
+  padding: 20px;
+  color: #fff;
+  opacity: 0;
+  transition:1s all;
+}
+.zimaku:hover{
+  opacity: 1;
+  transition:1s all;
+}
+/* .fukidashi {
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 250px;
+  padding: 16px;
+  border-radius: 20px;
+  background: #33cc99;
+  color: #fff;
+  font-weight: bold;
+}
+.fukidashi:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: -19px;
+  margin-left: 10px;
+  border: solid transparent;
+  border-color: rgba(51, 204, 153, 0);
+  border-top-color: #ffffff;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+}
+.text:hover + .fukidashi {
+  display: block;
+} */
+
+d{
+  
+}
+
+.b{
+  /* width:800px;  */
+  margin:0 auto; 
+  /* overflow:hidden; */
+ }
+ .b img{
+  transition:1s all;
+ }
+ .b img:hover{
+   transform:scale(1.8,1.8);
+   transition: 0.5s all;
+ }
+
+ .e{
+   text-align: right;
+   width: 99%;
+ }
+
+ footer{
+   height: 50px;
+ }
